@@ -1,0 +1,131 @@
+@import "nav.css";
+@import "box.css";
+@import "footer.css";
+
+body{
+    background-color: rgb(187, 255, 246);
+}
+/*small mobile*/
+.container{
+    display: grid;
+    width: auto;
+    height: auto;
+   /* margin:auto;
+    margin-top: 150px;*/
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 500px 800px;
+    grid-template-areas: 
+    "hd"
+    "sd"
+    "main"
+    "ft";
+    /*justify-content: center;
+    align-items: initial;*/
+}
+
+/*.box{
+    display: flex;
+    flex-direction: column;
+    
+    border: 2px solid purple;
+    background-color: sandybrown;
+}*/
+
+button{
+    padding: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+.header{
+    grid-area: hd;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 200%;
+}
+
+p{
+    font-weight: lighter;
+    font-style: italic;
+}
+
+h1{
+    font-size: 200%; 
+    text-decoration: underline; 
+    font-weight: bold; 
+    color: rgb(84, 91, 187);
+}
+
+h2{
+    text-decoration: underline;
+    font-weight: bold; 
+    color: yellowgreen;
+}
+
+h3{
+    font-style: normal; 
+    text-decoration: underline; 
+    font-weight: bold; 
+    text-size-adjust: 200%; 
+    color: seagreen;
+}
+
+figcaption{
+    font-size: 200%;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.sidebar{
+    grid-area: sd;
+    text-align: center;
+}
+
+.content{
+    grid-area: main;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*.footer{
+    grid-area: ft;
+}*/
+
+/*nav {
+    background: rgb(253, 251, 251);
+    padding: 0 15px;
+    text-align: left;
+}*/
+
+/*
+medium
+*/
+@media(min-width:600px) and (max-width:1100){
+    .container{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 250px 600px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd" 
+        "sd sd main main main main main main" 
+        "ft ft ft ft ft ft ft ft";
+        border: 4px solid red;
+    }
+}
+
+/*large*/
+@media(min-width:1101px)
+{
+    .container{
+        display: grid;
+        
+        grid-template-columns: 950px;
+        grid-template-rows: 350px 1fr 1fr;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd" 
+        "sd sd sd sd main main main main" 
+        "ft ft ft ft ft ft ft ft";
+        border: 4px solid blue;
+    }
+}
