@@ -7,5 +7,5 @@ In this project I have use:
 2) CSS 
 3) Flex Box 
 4) CSS Grid  
-5) media query  
+5) media query 
 I make it responsive and These Pages are mobile-friendly and display correctly on all display sizes (mobile, tablet, desktop).
